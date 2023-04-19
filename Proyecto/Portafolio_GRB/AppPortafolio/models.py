@@ -8,6 +8,9 @@ class Proyectos(models.Model):
     descripcion=models.TextField()
     fechaRealizacion=models.CharField(max_length=8)
 
+    def __str__(self):
+        return self.nombre
+
 class Articulos(models.Model):
     titulo=models.CharField(max_length=40)
     fechaPubliacaion=models.DateField()
@@ -18,3 +21,6 @@ class Clientes(models.Model):
     mensajeCliente=models.CharField(max_length=300)
     nuevo=models.BooleanField()
     telCliente=models.CharField(max_length=15)
+
+    def __str__(self):
+        return self.nombreCliente

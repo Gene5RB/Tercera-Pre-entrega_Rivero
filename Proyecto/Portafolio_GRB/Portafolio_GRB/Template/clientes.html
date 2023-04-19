@@ -1,12 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLIENTES</title>
-</head>
-<body style="background-color: red;"></bodystyle>
-        <h1>VISTA DE CLIENTES</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+<!-- Contenido que cambia-->
+
+{% block contenidoQueCambia %}
+
+</header>
+<div class="container"></div>
+<section class="page-section clientes" id="clientes">
+    <div class="container">
+ <!-- About Section-->
+  <section class="page-section bg-primary text-white mb-0" id="clientes">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">Clientes</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead">Exceclsior Gama / Azzazmura</p></div>
+            <div class="col-lg-4 ms-auto"><p class="lead">MTRA Arquitectos / Eco Control</p></div>
+        </div>
+
+        {% endblock %}

@@ -17,8 +17,24 @@
             <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
-        <p class="masthead-subheading font-weight-light mb-0">GRB Proyectos es una empresa independiente, entusiasta de la tecnología enfocada en brindar servicios de ingeniería desde el diseño hasta la construcción.
-            Entre nuestros servicios se encuentran: Implementacion de Usos BIM / Generación de documentación de obra / Asesoría en la implantación BIM para las empresas</p>
+        <p class="masthead-subheading font-weight-light mb-0">FORMULARIO AGREGAR PORYECTOS</p>
     </div>
+
+    <form action = "{% url 'ProyectoFormulario' %}" method = "POST"> {% csrf_token %}
+
+        <table>
+
+            {{Formulario1.as_table}}
+
+        </table>
+
+        <input type="submit" , value="Enviar"> 
+    
+    </form>
+
+
+
+
+
 
     {% endblock %}
